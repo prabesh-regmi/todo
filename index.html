@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Todo app</title>
+</head>
+
+<body>
+    <div class="body">
+        <div class="container">
+            <div class="heading">
+                <h1 class="heading">ToDo App</h1>
+                <hr>
+                <div class="add-todo">
+                    <button class="new-btn" id="newBtn">New</button>
+
+                </div>
+
+            </div>
+            <div class="todo-list">
+                <div class="todo-heading">
+                    <h3 class="active-todo-heading" id="todo-heading">Todo Task</h3>
+                    <h3 id="completed-heading">Completed Task</h3>
+
+                </div>
+                <hr>
+                <div class="todo-table" id="todo-table"></div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-container">
+            <div class="modal-heading"> Add new Task</div>
+            <form id="form" method="post">
+                <div class="modal-body">
+                    <label>Title</label><br />
+                    <input name="title" type="text" placeholder="Title">
+                    <br />
+                    <label>Description</label><br />
+                    <textarea name="description" cols="30" rows="5"></textarea>
+                    <label>Date</label><br />
+                    <input name="date" type="date">
+                </div>
+
+                <div class="modal-footer">
+                    <button class="modal-btn cancel" type="button" id="cancel">Cancel</button>
+                    <button class="modal-btn create" type="submit" id="create">Create</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+    <div id="notification"></div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

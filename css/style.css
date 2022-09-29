@@ -1,0 +1,205 @@
+.body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #ececec;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    margin-top: 5%;
+    min-width: 50%;
+    background-color: #ffffff;
+    height: fit-content;
+}
+
+.heading {
+    text-align: center;
+}
+
+.add-todo {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.new-btn {
+    padding: 5px 20px;
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: green;
+    color: #ffffff;
+    margin-right: 20px;
+    cursor: pointer;
+    margin-bottom: 30px;
+
+}
+
+.todo-list {
+    width: 95%;
+    margin: auto;
+    padding-bottom: 10px;
+
+}
+.todo-heading{
+    display: flex;
+    justify-content: space-between;
+    line-height: 0px;
+    align-items: baseline;
+    margin-bottom: -10px;
+}
+
+.todo-list .todo-heading h3 {
+    line-height: 0px;
+    cursor: pointer;
+
+}
+.active-todo-heading{
+    font-size: 26px;
+    font-weight: bold;
+    color: green;
+    text-decoration: underline;
+}
+hr{
+    line-height: 0px;
+}
+.modal {
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.modal-show {
+    display: flex;
+}
+
+.modal-container {
+    min-width: 40%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    border: 1px solid black;
+    height: fit-content;
+    padding: 5px 30px;
+    opacity: 1;
+    border-radius: 4px;
+}
+
+.modal-heading {
+    text-align: center;
+    font-size: 24px;
+    margin: 10px 15px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin: auto;
+    font-size: 18px;
+    margin: 5px 0px;
+    padding: 5px 10px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-footer .modal-btn {
+    padding: 10px 30px;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+.modal-footer .cancel {
+    background-color: #ffffff;
+}
+
+.modal-footer .create {
+    background-color: green;
+    color: white;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.label {
+    width: 100%;
+    font-size: 14px;
+    color: red;
+    float: left;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.action-div {
+    display: flex;
+    align-items: center;
+}
+
+.action-div a {
+    cursor: pointer;
+}
+
+.action-div .edit {
+    margin: 0px 20px 0px 10px;
+    color: blue;
+    text-decoration: underline;
+
+}
+.notification{
+    position: absolute;
+    left:80% ;
+    top:85%;
+    padding: 0px 24px;
+    min-width: 100px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    color:green;
+    opacity: 1;
+    transition: opacity 1s;
+    border-left: 3px solid green;
+
+}
+
+.hide-opacity {
+    opacity: 0.5;
+    display: none;
+
+}
